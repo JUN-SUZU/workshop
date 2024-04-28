@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.no__indention {
+  display: inline-block;
+}
+
+main {
+  .panel__main {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: calc(80% + 5rem);
+    background-color: #f0f0f0;
+    opacity: 0.8;
+    max-width: 1200px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #00004a;
+	h2, h3, p {
+	  text-align: center;
+	}
+    .container__description {
+      margin: 1rem;
+    }
+    .container__mods {
+      display: flex;
+      justify-content: space-around;
+      margin: 1rem;
+    }
+  }
+}
+.right {
+  text-align: right;
+  color: #333;
+}
