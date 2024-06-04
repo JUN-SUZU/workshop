@@ -118,7 +118,7 @@ Initially invisible.*/
     border: solid 1px black;
     border-radius: 0.5rem;
   }
-  .hamMenu .active {
+  .hamMenu.active {
     display: block;
     position: absolute;
     top: 2rem;
