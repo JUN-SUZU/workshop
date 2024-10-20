@@ -2,93 +2,86 @@
 <html lang="ja">
 
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="robots" content="index,follow">
-    <meta content="工業化MOD専門鯖 工房鯖" name="description">
-    <meta name="keywords" content="工房鯖,Discord,Minecraft,工業">
-    <meta name="author" content="AZ_Owata">
-    <meta name="cpr" content="© 2024 AZ_Owata">
+    <title>ホーム | 工房鯖</title>
+    <link rel="icon" href="/assets/images/icon.png">
+    <meta content="工房鯖とは工業化modのマルチプレイサーバーです。" name="description">
+    <meta name="keywords" content="">
+    <meta name="author" content="JUN-SUZU">
+    <meta name="cpr" content="© 2024 JUN-SUZU">
+    <meta name="theme-color" content="#534472">
     <meta name="language" content="ja">
     <meta name="format-detection" content="telephone=no,email=no,address=no">
-    <meta name="theme-color" content="#6c3db1">
-	<title>工房鯖</title>
-    <link rel="canonical" href="https://workshop.jun-suzu.net/">
-    <link rel="icon" href="/images/ifavicon.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<link rel="stylesheet" href="./css/reset.css">
-	<link rel="stylesheet" href="./css/base.css">
-	<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/base.css">
 </head>
 
 <body>
-	<header>
-		<image src="/images/favicon.png">
-			<h1>工房鯖</h1>
-			<div class="navMenu">
-				<ul>
-					<li class="no-list-points"><a href="/">ホーム</a></li>
-					<li class="no-list-points"><a href="/serverInfo/">情報</a></li>
-					<li class="no-list-points"><a href="/gallery/">ギャラリー</a></li>
-					<li class="no-list-points"><a href="https://discord.gg/3M2jSCnzmN">Discord</a></li>
-				</ul>
-			</div>
-			<div class="menubutton">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="hamMenu">
-				<ul>
-					<li class="no-list-points"><a href="/">ホーム</a></li>
-					<li class="no-list-points"><a href="/serverInfo/">情報</a></li>
-					<li class="no-list-points"><a href="/gallery/">ギャラリー</a></li>
-					<li class="no-list-points"><a href="https://discord.gg/3M2jSCnzmN">Discord</a></li>
-				</ul>
-			</div>
-	</header>
-
-	<main>
-		<article class="panel__main">
-			<div class="container__description">
-				<h2>概要</h2>
-				<p>
-					<span class="no__indention">工業化modが大好きな人たちが集まって、ワイワイ好きなもの建てて遊ぶ鯖です。</span>
-					<span class="no__indention">シーズン制（この鯖ではチャプターと呼ばれる）となっており、</span>
-					<span class="no__indention">シーズンごとにMod構成やバージョンを変えて遊んでいます。</span>
-				</p>
-			</div>
-			<h2>主な導入Mod</h2>
-			<div class="container__mods">
-				<div class="fact">
-					<h3>工業Mod</h3>
-					<ul>
-						<li>Mekanism</li>
-						<li>Mekanism Tweaks</li>
-						<li>Create</li>
-						<li>Immersive Engineering</li>
-					</ul>
-				</div>
-				<div class="misc">
-					<h3>その他Mod</h3>
-					<ul>
-						<li>Carry On</li>
-						<li>Flux Network</li>
-						<li>Iron Chest</li>
-						<li>Ice and Fire</li>
-						<li>Refined Storage</li>
-					</ul>
-				</div>
-			</div>
-			<p class="right">※追加してほしいModがあれば、鯖主に伝えてください。</p>
-		</article>
-	</main>
-
-	<footer>
-		<p>© 2024 AZ_OWATA</p>
-	</footer>
-	<script src="/js/index.js"></script>
+    <header>
+        <h1>工房鯖</h1>
+        <nav>
+            <ul>
+                <a href="/"><li>
+                        <span class="jp__nav">ホーム</span><br><span class="en__nav">Home</span>
+                    </li></a>
+                <a href="/info"><li>
+                        <span class="jp__nav">サーバー情報</span><br><span class="en__nav">Information</span>
+                    </li></a>
+                <a href="/howto"><li>
+                        <span class="jp__nav">はじめ方</span><br><span class="en__nav">How to start</span>
+                    </li></a>
+                <a href="/status"><li>
+                        <span class="jp__nav">ステータス</span><br><span class="en__nav">Status</span>
+                    </li></a>
+                <a href="/contact"><li>
+                        <span class="jp__nav">お問い合わせ</span><br><span class="en__nav">Contact us</span>
+                    </li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>お知らせ</h2>
+                <p>10月18日に、chapter22が始まりました。</p>
+                <p>現在、工房鯖は、バージョン1.16.5に対応しています。</p>
+                <p>今回の主なmodは、MekanismとProjectEです。</p>
+                <p>詳細は、<a href="/info">サーバー情報</a>をご覧ください。</p>
+            </article>
+        </section>
+        <section class="slider">
+            <button class="prev" onclick="plusSlides(-1)">
+                <img src="/assets/images/slider/leftarrow.png" alt="左矢印">
+            </button>
+            <div class="slider__images" id="sliderImages">
+                <img src="/assets/images/slider/1.png" alt="スライダー画像1 みんなで楽しいマインクラフトライフ">
+                <img src="/assets/images/slider/2.png" alt="スライダー画像2 みんなで楽しいマインクラフトライフ">
+                <img src="/assets/images/slider/3.png" alt="スライダー画像3 みんなで楽しいマインクラフトライフ">
+            </div>
+            <button class="next" onclick="plusSlides(1)">
+                <img src="/assets/images/slider/rightarrow.png" alt="右矢印">
+            </button>
+        </section>
+        <section>
+            <article>
+                <h2>工房鯖とは</h2>
+                <p>工業化modに特化したマインクラフトサーバーです。</p>
+                <p>工業化modとは、マインクラフトの世界に機械や電力、鉱石の追加を行うmodです。</p>
+                <p>主に、MekanismやIndustrialCraft2、BuildCraftなどを導入しています。</p>
+                <p>また、プレイヤー間の協力を重視しており、FTBTeamsやFTBQuestsを導入していますので、</p>
+                <p>友達と協力してクエストを進めることができます。</p>
+                <p>マルチプレイで楽しく工業化modをプレイしたい方は、ぜひご参加ください。</p>
+                <a href="https://discord.gg/3M2jSCnzmN" class="discord">Discordサーバーに参加する</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 JUN-SUZU</p>
+    </footer>
 </body>
+<script src="/js/slider.js"></script>
 
 </html>

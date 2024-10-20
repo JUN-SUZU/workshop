@@ -1,140 +1,129 @@
-@charset "UTF-8";
-/*This stylesheet is supposed to be applied to all HTMLs.*/
-/*GregTech background*/
 body {
-  min-height: 100vh; /*画面の高さの最小値を指定*/
   display: flex;
   flex-direction: column;
-  background-image: url(../images/background_loop.png);
-  background-repeat: repeat;
-  background-size: 100px;
-  background-color: #e0e0f0;
-  background-blend-mode: lighten;
-  opacity: 0.8;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
+  min-height: 100vh;
+}
+
+code {
+  display: inline-block;
+  color: white;
+  background-color: #444;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 1rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: "SF Mono", "Roboto Mono", monospace, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+header nav {
+  width: 80%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+header nav ul li {
+  text-align: center;
+  display: block;
+  margin: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid gray;
+  border-radius: 2rem;
+}
+header nav ul li:hover {
+  cursor: pointer;
+  background-color: #e0b96a;
+}
+header nav ul li .jp__nav {
+  font-size: 1.2rem;
+}
+header nav ul li .en__nav {
+  font-size: 1rem;
+  color: #7f7f7f;
 }
 
 main {
-  flex-grow: 1; /*main要素が残りの高さを埋める*/
-}
-
-/*Banner base*/
-header {
-  background-color: #f8f8f8;
-  border-bottom: 4px solid #555555;
-  position: sticky;
+  flex-grow: 1;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 0.5rem 1rem;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 0 10px #00004a;
 }
-header img {
-  width: 32px;
-  height: 32px;
-  border: solid 1px black;
-  margin: 0 0.5rem;
+main a {
+  border-bottom: 2px solid #534472;
 }
-header .navMenu {
-  margin: 0 0 0 auto;
+main a:hover {
+  border-bottom: 2px solid #e0b96a;
 }
-header .navMenu ul {
-  display: flex;
+main section {
+  margin: 0.5rem 0;
 }
-header .navMenu ul li {
-  margin: 0 0.5rem;
+main section article {
+  width: calc(100vw - 1rem);
+  max-width: 800px;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin: 0.5rem;
 }
-
-/*Banner icon positions left side of title*/
-/*Menu on banner*/
-/*Menu that when width has been shrinked to less than 768px.
-In other words, Mobile Menu.
-Initially invisible.*/
-.menubutton {
-  display: none;
-}
-
-.hamMenu {
-  display: none;
-}
-
-.right {
-  text-align: right;
-}
-
-@media screen and (max-width: 768px) {
-  .navMenu {
-    display: none;
-  }
-  .menubutton {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 8px;
-    right: 8px;
-    width: 32px;
-    height: 32px;
-    background-color: #eee;
-    border-radius: 5px;
-    box-shadow: 0 0 4px #00004a;
-    cursor: pointer;
-    /*Hamburger menu button will be changed to cross mark button.
-    Active class will be toggled by script.js.*/
-  }
-  .menubutton span {
-    display: inline-block;
-    position: absolute;
-    height: 3px;
-    border-radius: 2px;
-    background: black;
-    width: 60%;
-  }
-  .menubutton span:nth-of-type(1) {
-    top: 7.5px;
-  }
-  .menubutton span:nth-of-type(2) {
-    top: 14.5px;
-  }
-  .menubutton span:nth-of-type(3) {
-    bottom: 7.5px;
-  }
-  .menubutton.active span:nth-of-type(1) {
-    top: 14.5px;
-    transform: rotate(45deg);
-  }
-  .menubutton.active span:nth-of-type(2) {
-    opacity: 0;
-  }
-  .menubutton.active span:nth-of-type(3) {
-    top: 14.5px;
-    transform: rotate(-45deg);
-  }
-  /*Display hidden menu when active.
-  Active class will be toggled by script.js.*/
-  .hamMenu {
-    border: solid 1px black;
-    border-radius: 0.5rem;
-  }
-  .hamMenu.active {
-    display: block;
-    position: absolute;
-    top: 2rem;
-    right: 1rem;
-    background-color: #eee;
-  }
-  .hamMenu ul {
-    padding: 0 0.4rem;
-  }
-}
-/*Footer*/
-footer {
+main section article img.status__img {
   width: 100%;
-  height: 40px;
-  padding: 0.5rem 0;
-  color: #fff;
-  background-color: #333;
-  text-align: center;
+  border-radius: 1rem;
+}
+main section iframe.discord {
+  width: 100%;
+  height: 500px;
+}
+main .slider {
+  position: relative;
+}
+main .slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+main .slider button img {
+  width: calc(1rem + 5vw);
+}
+main .slider button:hover {
+  cursor: pointer;
+}
+main .slider button.prev {
+  left: 0;
+  z-index: 1;
+}
+main .slider button.next {
+  right: 0;
+  z-index: 1;
+}
+main .slider .slider__images {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  position: relative;
+}
+main .slider .slider__images::-webkit-scrollbar {
+  display: none;
+}
+main .slider .slider__images img {
+  flex: 0 0 auto;
+  width: 100%;
 }
