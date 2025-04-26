@@ -2,9 +2,9 @@ let slideIndex = 1;
 function plusSlides(n) {
     slideIndex += n;
     if (slideIndex < 1) {
-        slideIndex = 3;
+        slideIndex = 5;
     }
-    if (slideIndex > 3) {
+    if (slideIndex > 5) {
         slideIndex = 1;
     }
     let slider = document.getElementById('sliderImages');

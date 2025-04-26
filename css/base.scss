@@ -65,6 +65,15 @@ main {
     &:hover {
       border-bottom: 2px solid $nextColor;
     }
+    &.discord__link {
+      display: block;
+      margin: 0.5rem auto;
+      width: 100%;
+      width: fit-content;
+      padding: 10px;
+      border-radius: 1rem;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    }
   }
   section {
     margin: 0.5rem 0;
